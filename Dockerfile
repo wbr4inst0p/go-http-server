@@ -41,5 +41,5 @@ FROM alpine:3.10.2
 RUN apk add --no-cache ca-certificates
 COPY --from=build /app/go-http-server /app/go-http-server
 WORKDIR /app/
-EXPOSE 9090
+EXPOSE 10000 
 ENTRYPOINT ["./go-http-server"]
